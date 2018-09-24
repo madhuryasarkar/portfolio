@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html class="no-js" ng-app> 
+  <head>
+    <title>Madhurya Sarkar</title>
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet'>	
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">		
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Angular JS Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
+    <script>
+      // $(function() {
+      //   $(".content").delay(1000).fadeIn();
+      // });
+      function move() {
+        window.location = "./openBox.html";
+      }
+    </script>
+    <style>
+      .body{
+        background: rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+      }
+      .section-1{
+        position: relative;
+        text-align: center;
+        min-height: 200px;
+        
+      }
+      .content{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.5);
+        height: 100%;
+        width: 100%;
+      }
+      .to-open{margin-top: 5%;}
+      .bg-img{width: 100%;}
+      .closed-box-img{height:25em;}
+      .open_box_btn{
+        margin-bottom: 20px;
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+	<body>
+    <div class="section-1 text-center">
+      <img class="bg-img" src="images/many-boxes-bg.JPG"/>
+      <div class="content">
+        <div class="to-open">
+          <button class="btn btn-lg open_box_btn" onclick="move()">Welcome to my portfolio</button><br>
+          <img src="images/closed-box.JPG" class="closed-box-img"/>
+        </div>
+      </div>
+    </div>
+    
+    
+	
+	</body>
+</html>
+

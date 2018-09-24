@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html ng-app> 
+  <head>
+    <title>Madhurya Sarkar</title>
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>	
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">		
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Angular JS Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
+    <script>
+      function goTo(name) {
+        window.location = "./"+name+".html";
+      }
+    </script>
+    <style>
+      body{
+        background-image: url("images/fully-open.JPG");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: 25%;
+      }
+      .work-experience-btn, .about-me-btn, .education-btn, .creative-btn{
+        position: fixed;
+        background-color: rosybrown;
+        color: #ddd;
+        box-shadow: 5px 5px 10px #333333;
+        font-family: 'Pacifico', cursive;
+        letter-spacing: 2px;
+        padding: 8px 25px;
+      }
+      .work-experience-btn{
+        margin-top: 9%;
+        margin-left: -7%;
+      }
+      .about-me-btn{
+        margin-top: 4%;
+        margin-left: 15%;
+      }
+      .education-btn{
+        margin-top: 34%;
+        margin-left: -4%;
+      }
+      .creative-btn{
+        margin-top: 34%;
+        margin-left: 16%;
+      }
+      .text-box{
+        width: 25em;
+        margin-left: 5em;
+        margin-top: 2%;
+        background: rgba(0, 0, 0, 0.9);
+        padding: 2em;
+        box-shadow: 5px 5px 15px #333333;
+        font-family: 'Pacifico', cursive;
+        letter-spacing:3px;
+      }
+      .my-img{
+        height:5em;
+        border-radius:50%;
+      }
+      .designation{ margin-left: 5em;}
+      .content-text{color: white;}
+      .name, .designation{
+        color: #ddd;
+        font-family: 'Pacifico', cursive;
+      }
+    </style>
+  </head>
+	<body>
+    <div class="openBox text-center">
+      <button class="btn btn-sm work-experience-btn" onclick="goTo('work')">Work Experience</button>
+      <button class="btn btn-sm about-me-btn" onclick="goTo('about')">About Me</button>
+      <button class="btn btn-sm education-btn" onclick="goTo('education')">Education</button>
+      <button class="btn btn-sm creative-btn" onclick="goTo('creativity')">Creativity</button>
+    </div>
+    <div class="text-box text-left">
+      
+      <h4> <img class="my-img" src="images/me.jpg" /> 
+        <span class="name"> Madhurya Sarkar </span>
+        <span class="designation">Front-End Developer & UI/UX Designer</span>
+      </h4>
+      
+      <p class="content-text">
+        Originality is the essence of true scholarship. Creativity is the soul of the true scholar.
+        - Nnamdi Azikiwe 
+      </p>
+    </div>
+	
+	</body>
+</html>
+
